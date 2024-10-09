@@ -16,7 +16,7 @@ menuBtn.addEventListener('click',()=>{
 navBar.addEventListener('click',()=>{
     navBar.classList.remove("active") 
 })
-
+ 
 searchBtn.addEventListener('click',()=>{
     inputSearch.classList.toggle("active")
     navBar.classList.remove("active") 
