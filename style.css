@@ -534,7 +534,8 @@ footer .container .share i{
     border: 1px solid #d3ad7f;
     transition: .3s;
     &:hover{
-        transform: scaleX(1.1);
+        background-color: var(--main-color);
+        color: #131313;
     }
 }
 footer .container .links{
@@ -556,7 +557,8 @@ footer .container .links a{
     margin-left: 1rem;
     transition: .3s;
     &:hover{
-        transform: scaleX(1.1);
+        background-color: var(--main-color);
+        color: #131313;
     }
     
     
