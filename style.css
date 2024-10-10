@@ -35,8 +35,10 @@ body{
     border-bottom: 1px solid var(--main-color);
     background-color: #131313;
 }
+
 .header h3{
-    transition: 0.5s;
+    color: #d3ad7f;
+    transition: 0.3s;
     &:hover{
         transform: scale(1.2);
     }
@@ -44,7 +46,7 @@ body{
 .header .navbar a{
     color: white;
     margin-left: 1.3rem;
-    transition: 0.5s;
+    transition: 0.3s;
 
     &:hover{
        color: var(--main-color);
@@ -55,7 +57,7 @@ body{
 }
 .header-icons-search i{
     margin-left: 1.3rem;
-    transition: 0.5s;
+    transition: 0.3s;
 
     &:hover{
        color: var(--main-color);
@@ -77,7 +79,7 @@ body{
     height: 2rem;
     width: 17rem;
     overflow: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     
     
 }
@@ -90,7 +92,7 @@ body{
     padding-left: 8px;
 }
 .header .searchinputs i{
-    transition: 0.5s;
+    transition: 0.3s;
     margin-right: 10px;
 
     &:hover{
@@ -170,6 +172,31 @@ body{
     text-transform: capitalize;
     font-size: 3rem;
 }
+.Home .homeContent .anime{
+    text-transform: capitalize;
+    display: flex;
+    gap: 20px;
+    font-size: 3rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.Home .homeContent .anime span{
+    width: 0px;
+    color:#d3ad7f;
+    border-right: 3px solid #d3ad7f;
+    animation: logo 4s steps(25) infinite;
+}
+@keyframes logo {
+    from{
+        width: 0px;
+    }
+    to{
+        width: 320px;
+    }
+    
+}
+
 .Home .homeContent button{
     border: none;
     outline: none;
@@ -388,6 +415,7 @@ color:#d3ad7f;
         
 }
 .review .box-container .box img{
+    object-fit:cover;
     height: 100px;
     width: 100px;
     border-radius: 100px;
@@ -606,5 +634,18 @@ footer .container p span{
         align-items: center;
         padding: 0 20px;
     }
-    
+    .Home .homeContent .anime{
+        font-size: 2rem;
+        
+    }
+    @keyframes logo {
+        from{
+            width: 0px;
+        }
+        to{
+            width: 200px;
+        }
+        
+    }
+
 }
